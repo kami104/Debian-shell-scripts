@@ -59,10 +59,11 @@ echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" | sudo tee "$SUDOERS_FILE" > /dev/null
 chmod 0440 "$SUDOERS_FILE"
 
 # Use visudo to check the syntax of the sudoers files
+echo "executing command 'visudo -c'"
 visudo -c
 
 # Restart SSH service to apply changes
 echo "Restarting SSH service..."
 systemctl restart ssh
 
-echo "Setup is complete. The user $USERNAME has been created and configured."
+echo "Setup is complete. The user $USERNAME has been created and configured. The root login is disabled"
