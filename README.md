@@ -18,3 +18,6 @@ You can execute this script as root with the following command:
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/setup_user_and_sudo.sh)
 ```
+If you have an RSA key in your ``~/.ssh/`` directory, you can export it to your server with the following command:
+```bash
+ssh-copy-id <login_user>@<server_IP>
