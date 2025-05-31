@@ -2,7 +2,7 @@
 shell scripts for Debian based OS
 ### Use this repository under your own responsability. I'm not a professional programmer, just an ammateur with AI and free time.
 
-## Create a new sudo user and remove root login if it is enabled script.
+## Script to create a new sudo user and remove root login if it is enabled.
 
 [This script](setup_user_and_sudo.sh)  creates a new user with password. It asks for:
    - The user name and its password.
