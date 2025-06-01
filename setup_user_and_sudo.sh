@@ -3,8 +3,8 @@
 # This script sets up a user with sudo privileges, allows passwordless sudo, and disables root SSH login.
 # Make sure to run it as root.
 
-# Updating repositories and installing sudo.
-apt update
+# Installing sudo.
+
 apt install sudo
 
 # Check if the script is run as root
