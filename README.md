@@ -8,6 +8,7 @@ shell scripts for Debian based OS
    - The user name and its password.
   
   It also does:
+   - Updates repositories and installs sudo
    - Disables the root login if enabled.
    - Adds the new user to the sudoers file in ``/etc/sudoers.d/``
    - Removes the need to insert the password when the new sudo user executes a sudo command.
