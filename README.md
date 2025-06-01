@@ -6,7 +6,7 @@ Shell scripts tested in Debian 12 Bookworm
 
 ## Table of contents:
    - [Script to create a new sudo user and remove root login if it is enabled.](https://github.com/kami104/Debian-shell-scripts/edit/main/README.md#script-to-create-a-new-sudo-user-and-remove-root-login-if-it-is-enabled)
-
+   - [Script UpUpAPAC (Upgrade, Update, AutoPurge, AutoClean](https://github.com/kami104/Debian-shell-scripts/edit/main/README.md#script-to-create-a-new-sudo-user-and-remove-root-login-if-it-is-enabled)
 
 ## Script to create a new sudo user and remove root login if it is enabled.
 
@@ -41,3 +41,8 @@ Follow [this guide](https://raspibolt.org/guide/raspberry-pi/security.html#login
 ## Script UpUpAPAC (Upgrade, Update, AutoPurge, AutoClean)
 
 [This script](UpUpAPAC.sh) executes the typical apt update, upgrade, autopurge and autoclean to maintain the machine updated with clean repositories.
+
+### You can execute this script as root with the following command:
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/UpUpAPAC.sh)
+```
