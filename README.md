@@ -23,7 +23,7 @@ This script can be useful after create a Debian LXC container or after installin
 
 ### You can execute this script as root with the following command:
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/setup_user_and_sudo.sh)
+bash -c "$(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/setup_user_and_sudo.sh)
 ```
 ### If you have an RSA key in your ``~/.ssh/`` directory, you can use it to login without password. 
 
@@ -44,5 +44,5 @@ Follow [this guide](https://raspibolt.org/guide/raspberry-pi/security.html#login
 
 ### You can execute this script as root with the following command:
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/UpUpAPAC.sh)
+bash -c "$(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/UpUpAPAC.sh)"
 ```
