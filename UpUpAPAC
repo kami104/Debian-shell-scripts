@@ -14,3 +14,5 @@ apt update
 apt upgrade -y
 apt autopurge -y
 apt autoclean -y
+
+echo "UpUpAPAC is completed."
