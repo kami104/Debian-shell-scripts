@@ -11,7 +11,7 @@ shell scripts for Debian based OS
    - Updates repositories and installs sudo
    - Disables the root login if enabled.
    - Adds the new user to the sudoers file in ``/etc/sudoers.d/``
-   - Removes the need to insert the password when the new sudo user executes a sudo command.
+   - Disables the password request when the new sudo user executes a sudo command.
 
 You can execute this script as root with the following command:
 ```bash
