@@ -15,6 +15,7 @@ Shell scripts tested in Debian 12 Bookworm
   
 It also does:
    - Installs sudo
+   - Creates a group with the same name as the user.
    - Disables the root login if enabled.
    - Adds the new user to the sudoers file in ``/etc/sudoers.d/``
    - Disables the password request when the new sudo user executes a sudo command.
