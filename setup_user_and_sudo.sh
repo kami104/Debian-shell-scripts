@@ -57,19 +57,16 @@ fi
 
 # Allow Users in Sudo Group Passwordless Access using visudo safety
 SUDOERS_FILE="/etc/sudoers.d/$USERNAME"
-echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" | sudo tee "$SUDOERS_FILE" #> /dev/null #canelled dev null
+echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" | tee "$SUDOERS_FILE" #> /dev/null #canelled dev null
 
 # Check if the file was created
 if [ -f "$SUDOERS_FILE" ]; then
     echo "Sudoers file $SUDOERS_FILE created."
     # Set the correct permissions for the sudoers file
-    sudo chmod 0440 "$SUDOERS_FILE"
+    chmod 0440 "$SUDOERS_FILE"
 else
     echo "Failed to create $SUDOERS_FILE. Please check for errors."
     exit
-
-# Set the correct permissions for the sudoers file
-chmod 0440 "$SUDOERS_FILE"
 
 # Use visudo to check the syntax of the sudoers files
 echo "executing command 'visudo -c'"
