@@ -68,6 +68,7 @@ if [ -f "$SUDOERS_FILE" ]; then
 else
     echo "Failed to create $SUDOERS_FILE. Please check for errors."
     exit
+fi
 
 # Use visudo to check the syntax of the sudoers files
 echo "executing command 'visudo -c'"
