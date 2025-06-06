@@ -58,7 +58,7 @@ fi
 # Allow Users in Sudo Group Passwordless Access using visudo safety
 SUDOERS_FILE="/etc/sudoers.d/$USERNAME"
 touch "$SUDOERS_FILE"
-echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" >> "$SUDOERS_FILE"
+echo "$USERNAME ALL=(ALL) NOPASSWD: ALL" > "$SUDOERS_FILE"
 
 # Check if the file was created
 if [ -f "$SUDOERS_FILE" ]; then
