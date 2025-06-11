@@ -6,7 +6,7 @@ Shell scripts tested in Debian 12 Bookworm
 
 ## Table of contents:
    - [Script to create a new sudo user and remove root login if it is enabled.](https://github.com/kami104/Debian-shell-scripts#script-to-create-a-new-sudo-user-and-remove-root-login-if-it-is-enabled)
-   - [Script UpUpAPAC (Upgrade, Update, AutoPurge, AutoClean](https://github.com/kami104/Debian-shell-scripts#script-upupapac-upgrade-update-autopurge-autoclean)
+   - [Script UpUpAPAC (Upgrade, Update, AutoPurge, AutoClean)](https://github.com/kami104/Debian-shell-scripts#script-upupapac-upgrade-update-autopurge-autoclean)
 
 ## Script to create a new sudo user and remove root login if it is enabled.
 
