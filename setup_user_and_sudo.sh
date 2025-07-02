@@ -72,13 +72,17 @@ else
 fi
 
 # Use visudo to check the syntax of the sudoers files
-echo "executing command 'visudo -c'. If it returns any error, something went wrong."
+echo ""
+echo ""
+echo "Executing command 'visudo -c'. If it returns any error, something went wrong."
 echo ""
 visudo -c
+echo ""
 echo ""
 
 # Restart SSH service to apply changes
 echo "Restarting SSH service..."
 systemctl restart ssh
 
+echo ""
 echo "Setup is complete. The user $USERNAME has been created and configured. The root login is disabled"
