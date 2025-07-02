@@ -9,7 +9,8 @@ apt install sudo
 
 # Check if the script is run as root
 if [ "$(id -u)" -ne 0 ]; then
-    echo "This script must be run as root" 1>&2
+    echo "This script must be run as root. Try again starting the command with 'sudo'" 1>&2
+    echo "If that doen't work, try 'apt install sudo' or try to login with the name 'root'" 1>&2
     exit 1
 fi
 
