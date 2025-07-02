@@ -11,9 +11,28 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 #Executing UpUpAPAC
+echo "Updating repositories"
+echo ""
 apt update
+
+echo ""
+echo ""
+echo "Upgrading software"
+echo ""
 apt upgrade -y
+
+echo ""
+echo ""
+echo "Purging unecessary software"
+echo ""
 apt autopurge -y
+
+echo ""
+echo ""
+echo "Removing deprecated repositories"
+echo ""
 apt autoclean -y
 
+echo ""
+echo ""
 echo "UpUpAPAC is completed."
