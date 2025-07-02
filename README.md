@@ -25,13 +25,18 @@ It also does:
    - Adds the new user to the sudoers file in ``/etc/sudoers.d/``
    - Disables the password request when the new sudo user executes a sudo command.
 
-> [!TIP]
-> This script can be useful after create a Debian LXC container or after installing a Debian machine where the only user is root and you want to increase security against bad actors trying to gain access (see [this](https://unix.stackexchange.com/questions/82626/why-is-root-login-via-ssh-so-bad-that-everyone-advises-to-disable-it) and [that](https://www.howtogeek.com/124950/htg-explains-why-you-shouldnt-log-into-your-linux-system-as-root/) for more information). 
->
+<br/>
+
 ### You can execute this script as root with the following command:
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/refs/heads/main/setup_user_and_sudo.sh)
 ```
+
+<br/>
+
+> [!TIP]
+> This script can be useful after create a Debian LXC container or after installing a Debian machine where the only user is root and you want to increase security against bad actors trying to gain access (see [this](https://unix.stackexchange.com/questions/82626/why-is-root-login-via-ssh-so-bad-that-everyone-advises-to-disable-it) and [that](https://www.howtogeek.com/124950/htg-explains-why-you-shouldnt-log-into-your-linux-system-as-root/) for more information). 
+
 
 > [!TIP]
 > #### If you have an RSA key in your ``~/.ssh/`` directory, you can use it to login without password. 
@@ -46,6 +51,8 @@ bash <(wget -qO- https://raw.githubusercontent.com/kami104/Debian-shell-scripts/
 ## Script UpUpAPAC (Upgrade, Update, AutoPurge, AutoClean)
 
 [This script](UpUpAPAC.sh) executes the typical apt update, upgrade, autopurge and autoclean to maintain the machine updated with clean repositories.
+
+<br/>
 
 ### You can execute this script as root with the following command:
 ```bash
