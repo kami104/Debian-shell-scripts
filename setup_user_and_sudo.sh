@@ -9,7 +9,7 @@ apt install sudo
 
 # Check if the script is run as root
 if [ "$(id -u)" -ne 0 ]; then
-    echo "This script must be run as root. Try again starting the command with 'sudo'" 1>&2
+    echo "This script must be run as root. Try again starting the command with 'sudo'"
     echo "If that doen't work, try 'apt install sudo' or try to login with the name 'root'" 1>&2
     exit 1
 fi
@@ -72,8 +72,10 @@ else
 fi
 
 # Use visudo to check the syntax of the sudoers files
-echo "executing command 'visudo -c'"
+echo "executing command 'visudo -c'. If it returns any error, something went wrong."
+echo ""
 visudo -c
+echo ""
 
 # Restart SSH service to apply changes
 echo "Restarting SSH service..."
