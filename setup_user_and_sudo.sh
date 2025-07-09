@@ -80,6 +80,13 @@ visudo -c
 echo ""
 echo ""
 
+# Copying RSA keys from root to the new user
+echo "Copying root's RSA keys to user $USERNAME."
+cp -r /root/.ssh /home/$USERNAME/
+chown -R $USERNAME:$USERNAME /home/$USERNAME/
+echo ""
+echo ""
+
 # Restart SSH service to apply changes
 echo "Restarting SSH service..."
 systemctl restart ssh
